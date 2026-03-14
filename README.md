@@ -97,5 +97,6 @@ Important columns:
 - Larger trades lead to **higher profit volatility**.
 
 ---
-
+Note: The original dataset is large and exceeds GitHub’s file size limits. 
+A sampled dataset is provided for demonstration and reproducibility.
 ⭐ If you like this project, feel free to **star the repository**.
