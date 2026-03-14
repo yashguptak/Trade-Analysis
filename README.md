@@ -1,156 +1,101 @@
-📊 Bitcoin Market Sentiment vs Trader Performance Analysis
+# 📊 Bitcoin Market Sentiment vs Trader Performance Analysis
 
-This project analyzes the relationship between Bitcoin Market Sentiment (Fear & Greed Index 📉📈) and trader performance using Hyperliquid historical trading data.
-The objective is to explore how market psychology influences trader behavior, profitability, trade size, and trading decisions. By combining sentiment data with real trading records, the project uncovers patterns that can help in developing data-driven trading insights.
+![Python](https://img.shields.io/badge/Python-3.x-blue)
+![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-green)
+![Visualization](https://img.shields.io/badge/Visualization-Plotly%20%7C%20Seaborn-orange)
 
-📁 Datasets
-1️⃣ Bitcoin Market Sentiment Dataset
+This project analyzes the relationship between **Bitcoin Market Sentiment (Fear & Greed Index 📉📈)** and **trader performance using Hyperliquid historical trading data**.
 
-Contains daily Fear & Greed Index values representing overall crypto market sentiment.
+The goal is to understand how **market sentiment affects trading behavior, profitability, trade volume, and risk-taking decisions**.
 
-Sentiment categories include:
+---
 
-Extreme Fear 😨
+## 📁 Datasets
 
-Fear 😟
+### 1️⃣ Bitcoin Market Sentiment Dataset
+Contains daily **Fear & Greed Index values** and sentiment classification.
 
-Neutral 😐
+Sentiment categories:
+- Extreme Fear 😨
+- Fear 😟
+- Neutral 😐
+- Greed 😃
 
-Greed 😃
+Columns include:
+- Timestamp
+- Value
+- Classification
+- Date
 
-Columns:
+---
 
-Timestamp
+### 2️⃣ Hyperliquid Historical Trading Data
 
-Value
-
-Classification
-
-Date
-
-2️⃣ Hyperliquid Historical Trading Data
-
-Contains detailed trade records including execution information and trader performance.
+Contains detailed trading records.
 
 Important columns:
+- Account
+- Coin
+- Execution Price
+- Size Tokens
+- Size USD
+- Side (BUY / SELL)
+- Timestamp IST
+- Direction
+- Closed PnL
+- Fee
+- Trade ID
 
-Account
+---
 
-Coin
+## ⚙️ Project Workflow
 
-Execution Price
+1. Data Cleaning and Preprocessing  
+2. Timestamp Conversion and Normalization  
+3. Merging Trading Data with Sentiment Data  
+4. Exploratory Data Analysis (EDA)  
+5. Sentiment-Based Trading Behavior Analysis  
+6. Visualization and Insight Generation  
 
-Size Tokens
+---
 
-Size USD
+## 📊 Analysis Performed
 
-Side (Buy/Sell)
+- Profit analysis by market sentiment
+- Trade volume analysis
+- Buy vs Sell behavior
+- Correlation analysis between trade size, fees, and profit
+- Top trader performance analysis
 
-Timestamp IST
+---
 
-Direction
+## 📊 Visualizations
 
-Closed PnL
+- 📊 Correlation Heatmaps
+- 📈 Plotly Interactive Charts
+- 🥧 Pie Charts for Buy/Sell Distribution
+- 📉 Profit vs Sentiment Analysis
 
-Fee
+---
 
-Trade ID
+## 🛠 Technologies Used
 
-⚙️ Project Workflow
+- Python 🐍
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Plotly
 
-1️⃣ Data Cleaning and Preprocessing
-2️⃣ Timestamp Conversion and Normalization
-3️⃣ Merging Trading Data with Sentiment Data
-4️⃣ Exploratory Data Analysis (EDA)
-5️⃣ Sentiment-Based Trading Behavior Analysis
-6️⃣ Visualization and Insight Generation
+---
 
-📊 Key Analyses
+## 🔍 Key Insights
 
-The project explores multiple analytical perspectives:
+- Trading activity increases during **Fear market conditions**.
+- **Greed sentiment periods show higher average profitability**.
+- Buy trades dominate during **bullish sentiment**, while sell pressure increases during fearful markets.
+- Larger trades lead to **higher profit volatility**.
 
-📈 Profit Analysis
+---
 
-Compare average trader profit under different sentiment conditions.
-
-📉 Trade Volume Analysis
-
-Evaluate how trading activity changes during Fear vs Greed markets.
-
-🔄 Buy vs Sell Behavior
-
-Analyze trader decision patterns across market sentiment.
-
-🔗 Correlation Analysis
-
-Study relationships between:
-
-Trade Size
-
-Fees
-
-Profit/Loss
-
-🏆 Trader Performance
-
-Identify top-performing traders and overall profitability trends.
-
-📊 Visualizations
-
-The project includes several visual analytics:
-
-📊 Correlation Heatmaps
-
-📈 Plotly Interactive Charts
-
-🥧 Pie Charts for Buy/Sell Distribution
-
-📉 Profit vs Market Sentiment
-
-📊 Trade Volume Comparisons
-
-These visualizations help uncover hidden patterns in trader behavior.
-
-🛠 Technologies Used
-
-Python 🐍
-
-Pandas
-
-NumPy
-
-Matplotlib
-
-Seaborn
-
-Plotly
-
-🔍 Key Insights
-
-Some insights discovered from the analysis:
-
-Trading activity tends to increase during Fear and Extreme Fear markets, indicating panic trading.
-
-Greed sentiment periods show higher average profits, reflecting bullish momentum.
-
-Buy trades dominate during Greed markets, while sell pressure increases during Fear markets.
-
-Larger trade sizes often lead to greater profit volatility.
-
-📂 Project Structure
-bitcoin-sentiment-analysis
-│
-├── data
-│   ├── historical_data.csv
-│   ├── fear_greed_index.csv
-│
-├── notebooks
-│   ├── analysis.ipynb
-│
-├── images
-│   ├── charts
-│
-├── README.md
-🚀 Project Goal
-
-The main goal of this project is to understand how market sentiment impacts trader performance and behavior in cryptocurrency markets. The findings can help traders and analysts design more informed and sentiment-aware trading strategies.
+⭐ If you like this project, feel free to **star the repository**.
